@@ -8,7 +8,7 @@ class HealthApp(tb.Window):
     def __init__(self, knn_model):
         super().__init__(themename="superhero")
         self.knn_model = knn_model
-        self.title("Diabetes Risk Assessment Panel")
+        self.title("ProxiMed - Diabetes Risk Assessment Panel")
         self.geometry("1100x750")
         
         self.input_variables = {}
