@@ -4,7 +4,7 @@
 
 ## 1. Educational and Portfolio Purpose Only
 
-The **Diabetes Risk Prediction App** (including the code, predictive models, interface, and output metrics) is developed solely for **educational, academic, and portfolio demonstration purposes**. 
+The **ProxiMed** application (including the code, predictive models, interface, and output metrics) is developed solely for **educational, academic, and portfolio demonstration purposes**. 
 
 * This application is a custom implementation of a K-Nearest Neighbors (KNN) algorithm built from scratch to showcase programming, mathematics, and software design capabilities.
 * It is **not** a clinically validated medical device, diagnostic tool, or screening instrument.
@@ -24,8 +24,8 @@ If you are concerned about your blood sugar, diabetes risk, or any other health 
 
 ## 3. Data and Algorithm Limitations
 
-* **Self-Reported Data:** The model is trained on the CDC's Behavioral Risk Factor Surveillance System (BRFSS) survey dataset. This data consists of self-reported lifestyle and health factors, which are subject to bias, estimation errors, and subjective self-assessment.
-* **Algorithmic Limitations:** The classification engine runs on a custom, simplified KNN pipeline optimized for local computing and training demonstration. It has not undergone rigorous clinical testing, trial phases, or peer-reviewed medical validation. Accuracy on test samples does not translate to real-world diagnostic accuracy.
+* **Self-Reported Data:** The model is trained on the CDC's Behavioral Risk Factor Surveillance System (BRFSS) survey dataset, sourced from [Kaggle](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset). This data consists of self-reported lifestyle and health factors, which are subject to bias, estimation errors, and subjective self-assessment.
+* **Algorithmic Limitations:** The classification engine runs on a custom, simplified KNN pipeline optimized for local computing and training demonstration. It has not undergone rigorous clinical testing, trial phases, or peer-reviewed medical validation. Accuracy on validation samples does not translate to real-world diagnostic accuracy.
 
 ---
 

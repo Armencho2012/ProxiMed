@@ -6,6 +6,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [2.0.0] - 2026-07-17
+
+### Added
+- Created `docs/` directory with `architecture.md`, `methodology.md`, and `evaluation.md`
+- Added `CITATION.cff` for academic citation support (GitHub "Cite this repository" button)
+- Added `SECURITY.md` with responsible disclosure policy
+- Created `assets/` directory for screenshots and demo media
+
+### Changed
+- Complete `README.md` rewrite with badges, SEO optimization, roadmap, and performance metrics
+- Restructured repository: source files in `src/`, data files in `data/`
+- Renamed `LICENSE.md` to `LICENSE` (standard GitHub convention)
+- Expanded `CONTRIBUTING.md` with detailed setup and development guidelines
+- Improved `CODE_OF_CONDUCT.md` with Contributor Covenant v2.1 attribution
+- Enhanced `DISCLAIMER.md` with dataset source attribution
+- Updated `requirements.txt` with version pins
+- Improved GitHub issue templates and pull request template
+- Expanded `.gitignore` with comprehensive Python patterns
+
+### Removed
+- Removed duplicate `readme.md` (content merged into `README.md`)
+- Removed standalone `description.md` (content moved to `docs/`)
+
+---
+
 ## [1.1.0] - 2026-07-15
 
 ### Added

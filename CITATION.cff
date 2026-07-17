@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "ProxiMed — Diabetes Risk Prediction using Machine Learning"
+type: software
+authors:
+  - given-names: Armen
+    alias: Armencho2012
+repository-code: "https://github.com/Armencho2012/ProxiMed"
+url: "https://github.com/Armencho2012/ProxiMed"
+license: MIT
+version: "2.0.0"
+date-released: "2026-07-17"
+keywords:
+  - diabetes-prediction
+  - machine-learning
+  - healthcare-ai
+  - knn
+  - python
+  - medical-screening
+  - classification
+abstract: "An end-to-end medical screening application that predicts diabetic risk using a custom-built K-Nearest Neighbors (KNN) algorithm, trained on 253,680 CDC BRFSS health records. The entire ML pipeline is built from scratch in pure Python."
