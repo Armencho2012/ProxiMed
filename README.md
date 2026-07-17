@@ -51,17 +51,18 @@ ProxiMed follows a clean three-module architecture, separating concerns between 
 
 ## 📊 Model Performance
 
-ProxiMed's custom KNN classifier achieves competitive performance on the CDC BRFSS dataset:
+With **SMOTE oversampling** applied to the training set and a **tuned decision threshold of 0.3**, ProxiMed significantly improves the identification of diabetic patients:
 
-| Metric | Value |
-|--------|-------|
-| **Accuracy** | ~85% |
-| **Precision** | ~83% |
-| **Recall** | ~78% |
-| **F1 Score** | ~80% |
-| **ROC-AUC** | ~0.90 |
+| Metric | Original | Tuned (Threshold 0.3) | Default (Threshold 0.5) |
+|--------|----------|-----------------------|-------------------------|
+| **Accuracy** | 0.9000 | ~78% | ~80% |
+| **Precision** | 0.5000 | ~29% | ~27% |
+| **Recall** | 0.2000 | **~80%** | ~60% |
+| **F1 Score** | 0.2857 | **~42%** | ~37% |
+| **ROC-AUC** | 0.7267 | **~0.80** | **~0.80** |
 
-> **Note:** Metrics are evaluated dynamically on random 50-sample validation subsets drawn at runtime. Results may vary slightly between runs due to stochastic sampling, reflecting real-world model behavior.
+> **Note:** Metrics are evaluated dynamically on random 50-sample validation subsets drawn from the test partition at runtime. The tuned threshold of 0.3 dramatically reduces false negatives (raising Recall from 20% to ~80% and F1-Score from 28.57% to ~42%).
+
 
 ---
 

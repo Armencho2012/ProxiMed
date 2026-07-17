@@ -83,12 +83,17 @@ class HealthApp(tb.Window):
             self.result_container.configure(bootstyle="danger" if is_risk else "success")
             
             display_text = (
-                f"DIAGNOSTIC STATUS:\n{results['Status'].upper()}\n\n"
-                f"--- KNN Evaluation Metrics ---\n\n"
-                f"Accuracy:   {results['Accuracy']:.4f}\n"
-                f"Precision:  {results['Precision']:.4f}\n"
-                f"Recall:     {results['Recall']:.4f}\n"
-                f"F1-Score:   {results['F1-Score']:.4f}\n"
+                f"DIAGNOSTIC STATUS (Tuned Threshold 0.3):\n{results['Status'].upper()}\n\n"
+                f"--- Default Threshold (0.5) ---\n"
+                f"Accuracy:   {results['Accuracy_50']:.4f}\n"
+                f"Precision:  {results['Precision_50']:.4f}\n"
+                f"Recall:     {results['Recall_50']:.4f}\n"
+                f"F1-Score:   {results['F1-Score_50']:.4f}\n\n"
+                f"--- Tuned Threshold (0.3) ---\n"
+                f"Accuracy:   {results['Accuracy_30']:.4f}\n"
+                f"Precision:  {results['Precision_30']:.4f}\n"
+                f"Recall:     {results['Recall_30']:.4f}\n"
+                f"F1-Score:   {results['F1-Score_30']:.4f}\n\n"
                 f"ROC-AUC:    {results['ROC-AUC']:.4f}"
             )
             
