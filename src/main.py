@@ -3,6 +3,7 @@ import ttkbootstrap as tb
 from ttkbootstrap.constants import *
 from model import CustomKNN
 import pandas as pd
+import os 
 
 class HealthApp(tb.Window):
     def __init__(self, knn_model):
@@ -98,6 +99,8 @@ class HealthApp(tb.Window):
             self.result_label.config(text="Error: Ensure all numeric fields contain valid numbers.", bootstyle="inverse-danger")
 
 if __name__ == "__main__":
+    if os.getcwd() != os.path.dirname(os.path.abspath(__file__)):
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
     df = pd.read_csv('../data/database.csv')
     model = CustomKNN(df, k_neighbors=5)
     app = HealthApp(model)
